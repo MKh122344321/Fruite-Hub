@@ -1,14 +1,16 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/utils/app_decorations.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../core/entities/order_entity.dart';
+import '../../../../../core/utils/app_decorations.dart';
+
 class OrderSummary extends StatelessWidget {
+  const OrderSummary({super.key});
+
   @override
   Widget build(BuildContext context) {
     final orderEntity = context.read<OrderInputEntity>();
-    final tax = !orderEntity.payWithCash! ? 0 : 30;
     return Container(
       decoration: AppDecorations.greyBoxDecorationUnSelected,
       child: Padding(

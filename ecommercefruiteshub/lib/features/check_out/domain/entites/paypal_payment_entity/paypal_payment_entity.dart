@@ -1,5 +1,4 @@
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-
+import '../../../../../core/entities/order_entity.dart';
 import 'amount.dart';
 import 'item_list.dart';
 

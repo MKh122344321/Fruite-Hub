@@ -1,6 +1,6 @@
-import 'package:ecommercefruiteshub/core/services/get_it_service.dart';
-import 'package:ecommercefruiteshub/features/auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
-import 'package:ecommercefruiteshub/features/auth/presentation/widgets/sign_in_screen_body.dart';
+import '../../../../core/services/get_it_service.dart';
+import '../cubits/sign_in_cubit/sign_in_cubit.dart';
+import '../widgets/sign_in_screen_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

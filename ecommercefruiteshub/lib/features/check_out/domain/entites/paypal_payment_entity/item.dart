@@ -1,5 +1,5 @@
-import 'package:ecommercefruiteshub/core/helper_functions/get_currency.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
+import '../../../../../core/helper_functions/get_currency.dart';
+import '../../../../cart/domain/entites/cart_item_entity.dart';
 
 class ItemEntity {
   String? name;

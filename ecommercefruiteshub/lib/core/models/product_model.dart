@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
+import '../entities/product_entity.dart';
 
 import '../helper_functions/get_avg_rating.dart';
 import 'review_model.dart';

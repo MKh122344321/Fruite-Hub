@@ -1,6 +1,6 @@
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
-import 'package:ecommercefruiteshub/features/home/presentation/widgets/carousel_back_ground_image_with_button.dart';
+import '../../../../core/theming/app_colors.dart';
+import '../../../../core/utils/app_images.dart';
+import 'carousel_back_ground_image_with_button.dart';
 import 'package:flutter/material.dart';
 import 'package:svg_flutter/svg.dart';
 

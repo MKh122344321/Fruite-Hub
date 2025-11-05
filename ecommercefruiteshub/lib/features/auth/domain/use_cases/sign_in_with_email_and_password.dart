@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/repo_interface/auth_repo_interface.dart';
+import '../../../../core/errors/failures.dart';
+import '../repo_interface/auth_repo_interface.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class SignInWithEmailAndPasswordUseCase {

@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/features/auth/presentation/widgets/social_midia_button.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/theming/app_text_styles.dart';
 
 class CustomDevider extends StatelessWidget {
   const CustomDevider({super.key});

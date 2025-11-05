@@ -1,17 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_elevated_button.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_no_results__widget.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_progress_hud.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/order_track_section/track_way.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:skeletonizer/skeletonizer.dart';
-import 'package:svg_flutter/svg.dart';
+
+import '../../../../../core/custom_widgets/custom_elevated_button.dart';
+import '../../../../../core/utils/k_padding.dart';
+import '../../../../../core/widgets/custom_no_results__widget.dart';
+import '../../../domain/entities/order_track_entity.dart';
+import '../../cubit/cubit/main_profile_cubit.dart';
+import 'track_way.dart';
 
 class OrderTrackScreenBody extends StatelessWidget {
   const OrderTrackScreenBody({super.key});

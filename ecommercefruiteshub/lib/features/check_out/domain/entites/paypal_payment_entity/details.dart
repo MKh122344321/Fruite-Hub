@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
+import '../../../../../core/entities/order_entity.dart';
 
 class DetailsEntity {
   String? subtotal;

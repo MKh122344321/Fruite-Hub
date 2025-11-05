@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/widgets/password_field.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
+import '../../../../../core/helper_functions/spacing.dart';
+import '../../../../../core/widgets/password_field.dart';
+import '../../cubit/cubit/main_profile_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

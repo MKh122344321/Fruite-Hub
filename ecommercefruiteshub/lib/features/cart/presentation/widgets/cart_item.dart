@@ -1,13 +1,13 @@
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/widgets/counter.dart';
+import '../../domain/entites/cart_item_entity.dart';
+import '../cubit/cubit/cart_entity_cubit.dart';
+import 'counter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CartItem extends StatelessWidget {
   final CartItemEntity cartItem;
 
-  const CartItem({required this.cartItem});
+  const CartItem({super.key, required this.cartItem});
 
   @override
   Widget build(BuildContext context) {

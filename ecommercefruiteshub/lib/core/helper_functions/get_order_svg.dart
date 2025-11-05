@@ -1,5 +1,6 @@
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
 import 'package:svg_flutter/svg.dart';
+
+import '../utils/app_images.dart';
 
 SvgPicture getSvg({required int index}) {
   switch (index) {

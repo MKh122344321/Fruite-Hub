@@ -1,6 +1,7 @@
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../utils/app_images.dart';
 
 class CustomSwitch extends StatelessWidget {
   final double size;
@@ -8,11 +9,11 @@ class CustomSwitch extends StatelessWidget {
   final ValueChanged<bool> onChanged; // Callback to notify parent widget
 
   const CustomSwitch({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     this.size = 20,
-  }) : super(key: key);
+  });
 
   // late bool widget.value;
   @override

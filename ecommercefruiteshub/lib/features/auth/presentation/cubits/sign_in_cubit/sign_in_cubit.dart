@@ -1,7 +1,7 @@
-import 'package:ecommercefruiteshub/features/auth/data/models/user_model.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/use_cases/sign_in_with_email_and_password.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/use_cases/sign_in_with_google_use_case.dart';
+import '../../../data/models/user_model.dart';
+import '../../../domain/entities/user_entity.dart';
+import '../../../domain/use_cases/sign_in_with_email_and_password.dart';
+import '../../../domain/use_cases/sign_in_with_google_use_case.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

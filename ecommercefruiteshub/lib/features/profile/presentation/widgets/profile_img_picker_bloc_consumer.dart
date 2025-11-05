@@ -1,17 +1,15 @@
 import 'dart:io';
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/build_error_bar.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/get_user.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_network_image.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_progress_hud.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:provider/provider.dart';
+
+import '../../../../core/helper_functions/build_error_bar.dart';
+import '../../../../core/helper_functions/get_user.dart';
+import '../../../../core/widgets/custom_network_image.dart';
+import '../../../../core/widgets/custom_progress_hud.dart';
+import '../cubit/cubit/main_profile_cubit.dart';
 
 class ProfileImgPickerBlocConsumer extends StatelessWidget {
   const ProfileImgPickerBlocConsumer({super.key});

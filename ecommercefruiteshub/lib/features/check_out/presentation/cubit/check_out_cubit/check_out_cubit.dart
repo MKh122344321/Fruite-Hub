@@ -1,9 +1,7 @@
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/domain/use_cases/add_order_to_databse_use_case.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/use_cases/get_orders_use_case.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
+
+import '../../../../../core/entities/order_entity.dart';
+import '../../../domain/use_cases/add_order_to_databse_use_case.dart';
 
 part 'check_out_state.dart';
 

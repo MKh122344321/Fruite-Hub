@@ -1,12 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/core/entities/shipping_address_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/payment_section/delivery_address_card.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/payment_section/order_summury.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../../core/entities/order_entity.dart';
+import '../../../../../core/entities/shipping_address_entity.dart';
+import '../../../../../core/helper_functions/spacing.dart';
+import 'delivery_address_card.dart';
+import 'order_summury.dart';
 
 class PaymentSection extends StatelessWidget {
   const PaymentSection({super.key, required this.pageController});

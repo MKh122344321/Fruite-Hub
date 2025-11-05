@@ -1,7 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
+import '../../../../core/errors/failures.dart';
+import '../entities/user_entity.dart';
 
 abstract class AuthRepoInterface {
   Future<Either<Failure, User>> signInWithEmailAndPassword({

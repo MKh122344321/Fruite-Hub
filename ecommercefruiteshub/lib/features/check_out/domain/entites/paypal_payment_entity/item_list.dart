@@ -1,5 +1,4 @@
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
-
+import '../../../../cart/domain/entites/cart_item_entity.dart';
 import 'item.dart';
 
 class ItemList {

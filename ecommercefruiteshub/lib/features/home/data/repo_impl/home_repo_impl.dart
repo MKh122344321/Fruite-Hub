@@ -1,11 +1,10 @@
-import 'dart:math';
-
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/home/data/data_source/home_remote_data_source.dart';
-import 'package:ecommercefruiteshub/features/home/domain/home_repo_interface/home_repo_interface.dart';
+
+import '../../../../core/entities/product_entity.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/errors/failures.dart';
+import '../../domain/home_repo_interface/home_repo_interface.dart';
+import '../data_source/home_remote_data_source.dart';
 
 class HomeRepoImpl implements HomeRepoInterface {
   final HomeRemoteDataSource homeDataSource;

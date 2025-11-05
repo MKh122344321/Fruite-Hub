@@ -1,10 +1,10 @@
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_switch.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/cubit/check_out_cubit/check_out_cubit.dart';
+import '../../../../../core/custom_widgets/custom_switch.dart';
+import '../../cubit/check_out_cubit/check_out_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CustomSwitchToSaveAddress extends StatelessWidget {
-  CustomSwitchToSaveAddress({
+  const CustomSwitchToSaveAddress({
     super.key,
     required this.formKey,
     required this.notifier,

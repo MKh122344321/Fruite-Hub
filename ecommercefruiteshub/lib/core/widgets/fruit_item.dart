@@ -1,10 +1,10 @@
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_network_image.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
+import '../entities/product_entity.dart';
+import '../helper_functions/spacing.dart';
+import '../theming/app_colors.dart';
+import '../theming/app_text_styles.dart';
+import 'custom_network_image.dart';
+import '../../features/cart/domain/entites/cart_item_entity.dart';
+import '../../features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

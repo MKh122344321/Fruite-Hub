@@ -1,12 +1,12 @@
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
+import '../../../../core/theming/app_colors.dart';
+import '../../../../core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 
 class CustomCheckbox extends StatefulWidget {
   final ValueChanged<bool> onChanged;
 
-  const CustomCheckbox({Key? key, required this.onChanged}) : super(key: key);
+  const CustomCheckbox({super.key, required this.onChanged});
 
   @override
   State<CustomCheckbox> createState() => _CustomCheckboxState();
@@ -18,7 +18,7 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        print('value = ${value}');
+        print('value = $value');
         value = !value;
         widget.onChanged(value);
         setState(() {});

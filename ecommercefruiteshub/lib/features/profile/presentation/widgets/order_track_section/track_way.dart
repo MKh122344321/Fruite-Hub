@@ -1,9 +1,9 @@
-import 'package:ecommercefruiteshub/core/helper_functions/get_order_svg.dart';
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
 import 'package:flutter/material.dart';
-import 'package:svg_flutter/svg.dart';
+
+import '../../../../../core/helper_functions/get_order_svg.dart';
+import '../../../../../core/theming/app_colors.dart';
+import '../../../../../core/utils/k_padding.dart';
+import '../../../domain/entities/order_track_entity.dart';
 
 class TrackWay extends StatelessWidget {
   const TrackWay({super.key, required this.track});

@@ -1,11 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/cubits/products_cubit/products_cubit.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_text_form_filled.dart';
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:svg_flutter/svg.dart';
+
+import '../cubits/products_cubit/products_cubit.dart';
+import '../theming/app_colors.dart';
+import '../utils/app_images.dart';
+import 'custom_text_form_filled.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({super.key});

@@ -1,5 +1,6 @@
-import 'package:ecommercefruiteshub/core/entities/review_entity.dart';
 import 'package:equatable/equatable.dart';
+
+import 'review_entity.dart';
 
 class ProductEntity extends Equatable {
   final String name;

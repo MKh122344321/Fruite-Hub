@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/widgets/build_app_bar.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/payment_section/payment_success_body.dart';
+import '../../../../core/widgets/build_app_bar.dart';
+import '../../../../core/entities/order_entity.dart';
+import '../widgets/payment_section/payment_success_body.dart';
 import 'package:flutter/material.dart';
 
 class PaymentSucess extends StatelessWidget {

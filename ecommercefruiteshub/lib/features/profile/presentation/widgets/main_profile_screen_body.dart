@@ -1,20 +1,15 @@
-import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_switch.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/extensions.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/core/utils/routes_names.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/screens/order_track_screen.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/screens/profile_screen.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/build_menu_item.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/order_track_section/order_track_screen_body.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/profile_img_picker_bloc_consumer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+
+import '../../../../core/custom_widgets/custom_switch.dart';
+import '../../../../core/theming/app_text_styles.dart';
+import '../cubit/cubit/main_profile_cubit.dart';
+import '../screens/order_track_screen.dart';
+import '../screens/profile_screen.dart';
+import 'build_menu_item.dart';
+import 'profile_img_picker_bloc_consumer.dart';
 
 class MainProfileScreenBody extends StatefulWidget {
   const MainProfileScreenBody({super.key});
@@ -134,19 +129,6 @@ class _MainProfileScreenBodyState extends State<MainProfileScreenBody> {
           ],
         ),
       ),
-    );
-  }
-
-  static Widget _buildSwitchItem(String title, IconData icon, bool value) {
-    return SwitchListTile(
-      title: Text('Enable Notifications'),
-      value: value,
-      onChanged: (bool value) {},
-      activeColor: Colors.blue, // Customize the color when it's "on"
-      inactiveThumbColor: Colors.red, // Customize the thumb when it's "off"
-      inactiveTrackColor: Colors.grey, // Customize the track when it's "off"
-      activeTrackColor: Colors.green, // Customize the track when it's "on"
-      secondary: Icon(Icons.notifications), // Optional icon
     );
   }
 }

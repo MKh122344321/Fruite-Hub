@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/features/splash/presentation/widgets/splash_screen_body.dart';
+import '../widgets/splash_screen_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

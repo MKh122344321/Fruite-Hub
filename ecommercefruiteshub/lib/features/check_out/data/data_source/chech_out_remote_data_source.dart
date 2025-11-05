@@ -1,12 +1,12 @@
-import 'package:ecommercefruiteshub/core/connection/network_info.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/get_user.dart';
-import 'package:ecommercefruiteshub/core/services/firestore_service.dart';
-import 'package:ecommercefruiteshub/core/utils/api_path.dart';
-import 'package:ecommercefruiteshub/core/models/order_model.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
 import 'package:uuid/uuid.dart';
+
+import '../../../../core/connection/network_info.dart';
+import '../../../../core/entities/order_entity.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/helper_functions/get_user.dart';
+import '../../../../core/models/order_model.dart';
+import '../../../../core/services/firestore_service.dart';
+import '../../../../core/utils/api_path.dart';
 
 class CheckOutRemoteDataSource {
   final DataBaseService dataBaseService;

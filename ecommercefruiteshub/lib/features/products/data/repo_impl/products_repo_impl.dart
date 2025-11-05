@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/products/data/data_source/product_remote_data_source.dart';
-import 'package:ecommercefruiteshub/features/products/domain/repo_interface/product_repo_interface.dart';
+import '../../../../core/entities/product_entity.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/errors/failures.dart';
+import '../data_source/product_remote_data_source.dart';
+import '../../domain/repo_interface/product_repo_interface.dart';
 
 class ProductsRepoImpl implements ProductRepoInterface {
   final ProductRemoteDataSource productsRemoteDatqaSource;

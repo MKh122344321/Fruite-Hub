@@ -1,24 +1,21 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/cubits/products_cubit/products_cubit.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/build_error_bar.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/get_user.dart';
-import 'package:ecommercefruiteshub/core/services/get_it_service.dart';
-
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/screens/cart_screen.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/screens/order_track_screen.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/main_profile_screen_body.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/order_track_section/order_track_screen_body.dart';
-import 'package:ecommercefruiteshub/features/home/domain/entity/pristant_bottom_nav_bar_entity.dart';
-import 'package:ecommercefruiteshub/features/home/presentation/cubit/home_cubit/home_cubit.dart';
-import 'package:ecommercefruiteshub/features/home/presentation/screens/home_screeen.dart';
-import 'package:ecommercefruiteshub/features/products/presentation/screens/products_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:svg_flutter/svg.dart';
+
+import 'core/cubits/products_cubit/products_cubit.dart';
+import 'core/helper_functions/build_error_bar.dart';
+import 'core/helper_functions/get_user.dart';
+import 'core/services/get_it_service.dart';
+import 'core/theming/app_text_styles.dart';
+import 'features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
+import 'features/cart/presentation/screens/cart_screen.dart';
+import 'features/home/domain/entity/pristant_bottom_nav_bar_entity.dart';
+import 'features/home/presentation/screens/home_screeen.dart';
+import 'features/products/presentation/screens/products_screen.dart';
+import 'features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
+import 'features/profile/presentation/widgets/main_profile_screen_body.dart';
 
 class MainScreen extends StatelessWidget {
   MainScreen({super.key});

@@ -1,7 +1,7 @@
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
 import 'package:flutter/material.dart';
-
 import 'package:svg_flutter/svg.dart';
+
+import '../theming/app_text_styles.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({

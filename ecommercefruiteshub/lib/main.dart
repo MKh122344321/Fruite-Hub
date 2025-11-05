@@ -1,25 +1,23 @@
-import 'package:ecommercefruiteshub/core/helper_functions/get_user.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/on_generate_routes.dart';
-import 'package:ecommercefruiteshub/core/secure/constants/constants.dart';
-import 'package:ecommercefruiteshub/core/services/custom_bloc_observer.dart';
-import 'package:ecommercefruiteshub/core/services/get_it_service.dart';
-import 'package:ecommercefruiteshub/core/services/shared_preferences_singleton.dart';
-import 'package:ecommercefruiteshub/core/utils/constants.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
-import 'package:ecommercefruiteshub/features/home/presentation/screens/home_screeen.dart';
-import 'package:ecommercefruiteshub/features/splash/presentation/screens/splash_screen.dart';
-import 'package:ecommercefruiteshub/man_screen.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'core/helper_functions/on_generate_routes.dart';
+import 'core/secure/constants/constants.dart';
+import 'core/services/custom_bloc_observer.dart';
+import 'core/services/get_it_service.dart';
+import 'core/services/shared_preferences_singleton.dart';
+import 'core/utils/constants.dart';
+import 'features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
+import 'features/splash/presentation/screens/splash_screen.dart';
 import 'firebase_options.dart';
+import 'man_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -67,6 +65,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     final isLogIn = Prefs.getBool(kIsLoggedIn);

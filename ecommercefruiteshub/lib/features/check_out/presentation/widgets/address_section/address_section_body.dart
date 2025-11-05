@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/address_section/address_form.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/address_section/save_address_bloc_consumer.dart';
+import 'address_form.dart';
+import 'save_address_bloc_consumer.dart';
 import 'package:flutter/material.dart';
 
 class AddressSectionBody extends StatelessWidget {

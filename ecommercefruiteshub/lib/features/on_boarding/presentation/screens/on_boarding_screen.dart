@@ -1,5 +1,6 @@
-import 'package:ecommercefruiteshub/features/on_boarding/presentation/widgets/on_boarding_screen_body.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/on_boarding_screen_body.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});

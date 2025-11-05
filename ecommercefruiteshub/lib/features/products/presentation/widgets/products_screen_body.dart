@@ -1,12 +1,12 @@
-import 'package:ecommercefruiteshub/core/cubits/products_cubit/products_cubit.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_search_bar.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_sliver_grid.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/features/products/presentation/widgets/best_selling_headline.dart';
-import 'package:ecommercefruiteshub/features/products/presentation/widgets/get_all_products_for_app_bloc_consumer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/cubits/products_cubit/products_cubit.dart';
+import '../../../../core/custom_widgets/custom_search_bar.dart';
+import '../../../../core/helper_functions/spacing.dart';
+import '../../../../core/utils/k_padding.dart';
+import 'best_selling_headline.dart';
+import 'get_all_products_for_app_bloc_consumer.dart';
 
 class ProductsScreenBody extends StatelessWidget {
   const ProductsScreenBody({super.key});

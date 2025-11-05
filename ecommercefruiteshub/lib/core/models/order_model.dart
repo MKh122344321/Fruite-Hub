@@ -1,6 +1,6 @@
-import 'package:ecommercefruiteshub/core/models/order_product_model.dart';
-import 'package:ecommercefruiteshub/core/models/shipping_address_model.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
+import 'order_product_model.dart';
+import 'shipping_address_model.dart';
+import '../../features/profile/domain/entities/order_track_entity.dart';
 import 'package:uuid/uuid.dart';
 
 import '../entities/order_entity.dart';

@@ -1,9 +1,9 @@
-import 'package:ecommercefruiteshub/core/connection/network_info.dart';
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/models/product_model.dart';
-import 'package:ecommercefruiteshub/core/services/firestore_service.dart';
-import 'package:ecommercefruiteshub/core/utils/api_path.dart';
+import '../../../../core/connection/network_info.dart';
+import '../../../../core/entities/product_entity.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/models/product_model.dart';
+import '../../../../core/services/firestore_service.dart';
+import '../../../../core/utils/api_path.dart';
 
 class BestSellingRemoteDataSource {
   final DataBaseService dataBaseService;

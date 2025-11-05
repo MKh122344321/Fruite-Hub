@@ -1,5 +1,5 @@
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_entity.dart';
-import 'package:ecommercefruiteshub/core/entities/shipping_address_entity.dart';
+import '../../features/cart/domain/entites/cart_entity.dart';
+import 'shipping_address_entity.dart';
 
 class OrderInputEntity {
   final int? currentTrackStep;

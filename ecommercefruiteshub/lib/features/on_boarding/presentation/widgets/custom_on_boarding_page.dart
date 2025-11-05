@@ -1,13 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_elevated_button.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/extensions.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/core/utils/routes_names.dart';
 import 'package:flutter/material.dart';
 import 'package:svg_flutter/svg.dart';
+
+import '../../../../core/custom_widgets/custom_elevated_button.dart';
+import '../../../../core/helper_functions/extensions.dart';
+import '../../../../core/helper_functions/spacing.dart';
+import '../../../../core/theming/app_colors.dart';
+import '../../../../core/theming/app_text_styles.dart';
+import '../../../../core/utils/k_padding.dart';
+import '../../../../core/utils/routes_names.dart';
 
 class CustomOnBoardingPage extends StatelessWidget {
   const CustomOnBoardingPage({

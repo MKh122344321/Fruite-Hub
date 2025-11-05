@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ecommercefruiteshub/features/auth/data/models/user_model.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/use_cases/sign_up_with_email_and_password.dart';
+import '../../../data/models/user_model.dart';
+import '../../../domain/entities/user_entity.dart';
+import '../../../domain/use_cases/sign_up_with_email_and_password.dart';
 
 part 'sign_up_state.dart';
 

@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/data/data_source/chech_out_remote_data_source.dart';
-import 'package:ecommercefruiteshub/features/check_out/domain/repo_interface/order_repo_interface.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
+
+import '../../../../core/entities/order_entity.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/errors/failures.dart';
+import '../../domain/repo_interface/order_repo_interface.dart';
+import '../data_source/chech_out_remote_data_source.dart';
 
 class CheckOutRepoImpl implements CheckOutRepoInterface {
   final CheckOutRemoteDataSource checkOutRemoteDataSource;

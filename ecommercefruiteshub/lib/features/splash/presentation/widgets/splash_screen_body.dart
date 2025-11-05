@@ -1,10 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/services/shared_preferences_singleton.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
-import 'package:ecommercefruiteshub/core/utils/constants.dart';
-import 'package:ecommercefruiteshub/core/utils/routes_names.dart';
 import 'package:flutter/material.dart';
 import 'package:svg_flutter/svg.dart';
+
+import '../../../../core/services/shared_preferences_singleton.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/constants.dart';
+import '../../../../core/utils/routes_names.dart';
 
 class SplashScreenBody extends StatefulWidget {
   const SplashScreenBody({super.key});

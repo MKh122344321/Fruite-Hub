@@ -1,18 +1,18 @@
 import 'dart:io';
 
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/connection/network_info.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/get_user.dart';
-import 'package:ecommercefruiteshub/core/models/order_model.dart';
-
-import 'package:ecommercefruiteshub/core/services/data_storage/data_storage.dart';
-import 'package:ecommercefruiteshub/core/services/auth_service.dart';
-import 'package:ecommercefruiteshub/core/services/firestore_service.dart';
-import 'package:ecommercefruiteshub/core/utils/api_path.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import '../../../../core/connection/network_info.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/errors/failures.dart';
+import '../../../../core/helper_functions/get_user.dart';
+import '../../../../core/models/order_model.dart';
+import '../../../../core/services/auth_service.dart';
+import '../../../../core/services/data_storage/data_storage.dart';
+import '../../../../core/services/firestore_service.dart';
+import '../../../../core/utils/api_path.dart';
+import '../../domain/entities/order_track_entity.dart';
 
 class MainProfileRemoteDataSource {
   final NetworkInfo networkInfo;
@@ -89,7 +89,6 @@ class MainProfileRemoteDataSource {
   }
 
   Future<List<OrderTrack>> getOrderTrack() async {
-    int counter = 0;
     if (await networkInfo.isConnected == true) {
       try {
         final ls = await dataBase.getCollection<OrderModel>(

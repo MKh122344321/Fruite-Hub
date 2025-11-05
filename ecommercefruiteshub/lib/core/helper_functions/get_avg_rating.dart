@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/core/models/review_model.dart';
+import '../models/review_model.dart';
 
 num getAvgRating(List<ReviewModel> reviews) {
   final sum = reviews.fold<num>(

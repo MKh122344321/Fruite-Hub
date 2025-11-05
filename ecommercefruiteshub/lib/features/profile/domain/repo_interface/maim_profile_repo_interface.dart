@@ -1,8 +1,9 @@
 import 'dart:io';
 
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/profile/domain/entities/order_track_entity.dart';
+
+import '../../../../core/errors/failures.dart';
+import '../entities/order_track_entity.dart';
 
 abstract class MainProfileRepoInterface {
   Future<Either<Failure, String>> uploadImage({

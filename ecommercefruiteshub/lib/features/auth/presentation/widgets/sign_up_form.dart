@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_text_form_filled.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/widgets/password_field.dart';
+import '../../../../core/custom_widgets/custom_text_form_filled.dart';
+import '../../../../core/helper_functions/spacing.dart';
+import '../../../../core/widgets/password_field.dart';
 import 'package:flutter/material.dart';
 
 class SignUpForm extends StatefulWidget {

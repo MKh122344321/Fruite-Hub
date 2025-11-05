@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_text_form_filled.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/cubit/check_out_cubit/check_out_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../../core/custom_widgets/custom_text_form_filled.dart';
+import '../../../../../core/entities/order_entity.dart';
 
 class AddressForm extends StatelessWidget {
   const AddressForm({super.key, required this.formKey, required this.notifier});

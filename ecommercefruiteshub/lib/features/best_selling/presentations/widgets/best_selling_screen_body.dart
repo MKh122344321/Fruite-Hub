@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/features/best_selling/presentations/widgets/best_selling_bloc_consumer.dart';
+import 'best_selling_bloc_consumer.dart';
 import 'package:flutter/material.dart';
 
 class BestSellingScreenBody extends StatelessWidget {

@@ -3,16 +3,16 @@ import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/core/services/auth_service.dart';
-import 'package:ecommercefruiteshub/core/services/firestore_service.dart';
-import 'package:ecommercefruiteshub/core/services/shared_preferences_singleton.dart';
-import 'package:ecommercefruiteshub/core/utils/api_path.dart';
-import 'package:ecommercefruiteshub/core/utils/constants.dart';
-import 'package:ecommercefruiteshub/features/auth/data/models/user_model.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
-import 'package:ecommercefruiteshub/features/auth/domain/repo_interface/auth_repo_interface.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/errors/failures.dart';
+import '../../../../core/services/auth_service.dart';
+import '../../../../core/services/firestore_service.dart';
+import '../../../../core/services/shared_preferences_singleton.dart';
+import '../../../../core/utils/api_path.dart';
+import '../../../../core/utils/constants.dart';
+import '../models/user_model.dart';
+import '../../domain/entities/user_entity.dart';
+import '../../domain/repo_interface/auth_repo_interface.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthRepoImpl implements AuthRepoInterface {

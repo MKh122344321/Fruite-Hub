@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:ecommercefruiteshub/core/secure/constants/constants.dart';
+import '../../secure/constants/constants.dart';
 
-import 'package:ecommercefruiteshub/core/services/data_storage/data_storage.dart';
+import 'data_storage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:uuid/uuid.dart';
 

@@ -1,8 +1,9 @@
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/theming/app_colors.dart';
+
 class Counter extends StatefulWidget {
-  Counter({
+  const Counter({
     super.key,
     required this.onClickIncrease,
     required this.onClickDecrese,
@@ -12,7 +13,7 @@ class Counter extends StatefulWidget {
   final VoidCallback onClickIncrease;
   final VoidCallback onClickDecrese;
   final ValueChanged<int> onChangedvalue;
-  int value;
+  final int value;
   @override
   State<Counter> createState() => _CounterState();
 }
@@ -34,7 +35,7 @@ class _CounterState extends State<Counter> {
               : Colors.transparent,
           child: GestureDetector(
             onTap: () {
-              widget.value++;
+              widget.value + 1;
 
               isClickedAdd = true;
               isClickedremove = false;
@@ -58,7 +59,7 @@ class _CounterState extends State<Counter> {
               : Colors.transparent,
           child: GestureDetector(
             onTap: () {
-              widget.value == 0 ? null : widget.value--;
+              widget.value == 0 ? null : widget.value - 1;
               widget.onClickDecrese();
               isClickedremove = true;
               isClickedAdd = false;

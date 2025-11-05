@@ -1,17 +1,18 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_elevated_button.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/get_user.dart';
-import 'package:ecommercefruiteshub/core/services/get_it_service.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/widgets/cart_items_list.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/core/entities/shipping_address_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/screens/check_out_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+
+import '../../../../core/custom_widgets/custom_elevated_button.dart';
+import '../../../../core/entities/order_entity.dart';
+import '../../../../core/entities/shipping_address_entity.dart';
+import '../../../../core/helper_functions/get_user.dart';
+import '../../../../core/services/get_it_service.dart';
+import '../../../../core/utils/k_padding.dart';
+import '../../../check_out/presentation/screens/check_out_screen.dart';
+import '../../domain/entites/cart_entity.dart';
+import '../cubit/cubit/cart_entity_cubit.dart';
+import 'cart_items_list.dart';
 
 class CartScreenBody extends StatelessWidget {
   const CartScreenBody({super.key});

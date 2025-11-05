@@ -1,16 +1,17 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_elevated_button.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/hv_hvnt_rich_text.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/build_error_bar.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_progress_hud.dart';
-import 'package:ecommercefruiteshub/features/auth/presentation/cubits/sign_up_cubit/sign_up_cubit.dart';
-import 'package:ecommercefruiteshub/features/auth/presentation/widgets/custom_check_box.dart';
-import 'package:ecommercefruiteshub/features/auth/presentation/widgets/sign_up_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/custom_widgets/custom_elevated_button.dart';
+import '../../../../core/custom_widgets/hv_hvnt_rich_text.dart';
+import '../../../../core/helper_functions/build_error_bar.dart';
+import '../../../../core/helper_functions/spacing.dart';
+import '../../../../core/theming/app_text_styles.dart';
+import '../../../../core/utils/k_padding.dart';
+import '../../../../core/widgets/custom_progress_hud.dart';
+import '../cubits/sign_up_cubit/sign_up_cubit.dart';
+import 'custom_check_box.dart';
+import 'sign_up_form.dart';
 
 class SignUpScreenBody extends StatelessWidget {
   SignUpScreenBody({super.key});

@@ -5,7 +5,7 @@ import 'dart:math' as math;
 
 import 'package:crypto/crypto.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
+import '../errors/exceptions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
@@ -195,6 +195,7 @@ class FirebaseAuthService implements AuthService {
     return digest.toString();
   }
 
+  @override
   Future<User> signInWithApple() async {
     // To prevent replay attacks with the credential returned from Apple, we
     // include a nonce in the credential request. When signing in with
@@ -239,7 +240,7 @@ class FirebaseAuthService implements AuthService {
   /// Returns the updated user if the operation is successful.
   ///
   /// Parameters:
-  /*******  1c17d703-1e01-4435-a5bb-6887dcf5096e  *******/
+  /// *****  1c17d703-1e01-4435-a5bb-6887dcf5096e  ******
   Future<User> updateUserNameAndEmail({
     required String name,
     required String email,
@@ -254,7 +255,7 @@ class FirebaseAuthService implements AuthService {
         email: user!.email!,
         password: currentPassword,
       );
-      log("Updating user password... '${credential}'");
+      log("Updating user password... '$credential'");
 
       // Reauthenticate with the credential
       await user.reauthenticateWithCredential(credential);

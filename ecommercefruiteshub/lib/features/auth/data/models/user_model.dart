@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
+import '../../domain/entities/user_entity.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class UserModel extends UserEntity {

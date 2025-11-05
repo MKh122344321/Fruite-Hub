@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/best_selling/domain/use_cases/get_best_selling_products_use_case.dart';
-import 'package:ecommercefruiteshub/features/home/domain/use_cases/get_all_products_use_cse.dart';
-import 'package:ecommercefruiteshub/features/products/domain/us_cases/get_all_products_for_app_use_case.dart';
-import 'package:ecommercefruiteshub/features/products/domain/us_cases/search_product_use_case.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
+
+import '../../../features/best_selling/domain/use_cases/get_best_selling_products_use_case.dart';
+import '../../../features/home/domain/use_cases/get_all_products_use_cse.dart';
+import '../../../features/products/domain/us_cases/get_all_products_for_app_use_case.dart';
+import '../../../features/products/domain/us_cases/search_product_use_case.dart';
+import '../../entities/product_entity.dart';
+import '../../errors/failures.dart';
 
 part 'products_state.dart';
 
@@ -106,7 +106,7 @@ class ProductsCubit extends Cubit<ProductsState> {
   /// It is used to cancel the subscription to the stream of products returned by the searchProductUseCase.
   ///
   /// The subscription is cancelled to prevent memory leaks.
-  /*******  c6b83a2f-8b4c-4a07-a825-abaf7482e8e8  *******/
+  /// *****  c6b83a2f-8b4c-4a07-a825-abaf7482e8e8  ******
   void disposeSearchStream() {
     print("dispose");
     subscription?.cancel(); // Cancel the stream subscription

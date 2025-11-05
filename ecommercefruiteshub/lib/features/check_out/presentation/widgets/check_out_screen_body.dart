@@ -1,23 +1,25 @@
 import 'dart:developer';
 
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_elevated_button.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/build_error_bar.dart';
-import 'package:ecommercefruiteshub/core/secure/constants/constants.dart';
-import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
-import 'package:ecommercefruiteshub/core/utils/routes_names.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/domain/entites/paypal_payment_entity/paypal_payment_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/cubit/check_out_cubit/check_out_cubit.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/address_section/address_section_body.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/easy_steppet_widget.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/payment_section/payment_section.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/shipping_section/shipping_section_body.dart';
+import '../../../../core/custom_widgets/custom_elevated_button.dart';
+import '../../../../core/helper_functions/build_error_bar.dart';
+import '../../../../core/secure/constants/constants.dart';
+import '../../../../core/utils/k_padding.dart';
+import '../../../../core/utils/routes_names.dart';
+import '../../../../core/entities/order_entity.dart';
+import '../../domain/entites/paypal_payment_entity/paypal_payment_entity.dart';
+import '../cubit/check_out_cubit/check_out_cubit.dart';
+import 'address_section/address_section_body.dart';
+import 'easy_steppet_widget.dart';
+import 'payment_section/payment_section.dart';
+import 'shipping_section/shipping_section_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_paypal_payment/flutter_paypal_payment.dart';
 
 class CheckOutScreenBody extends StatefulWidget {
+  const CheckOutScreenBody({super.key});
+
   @override
   _CheckOutScreenBodyState createState() => _CheckOutScreenBodyState();
 }

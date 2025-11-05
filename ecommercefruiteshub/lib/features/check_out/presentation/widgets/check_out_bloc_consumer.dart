@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/build_error_bar.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_progress_hud.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/cubit/check_out_cubit/check_out_cubit.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/check_out_screen_body.dart';
+import '../../../../core/helper_functions/build_error_bar.dart';
+import '../../../../core/widgets/custom_progress_hud.dart';
+import '../cubit/check_out_cubit/check_out_cubit.dart';
+import 'check_out_screen_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';

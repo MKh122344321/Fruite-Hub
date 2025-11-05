@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
+import '../utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 

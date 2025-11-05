@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/theming/app_text_styles.dart';
 
 class BestSellingHeadline extends StatelessWidget {
   const BestSellingHeadline({super.key, required this.onTap});

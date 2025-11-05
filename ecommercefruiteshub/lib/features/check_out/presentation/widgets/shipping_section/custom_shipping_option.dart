@@ -1,6 +1,6 @@
-import 'package:ecommercefruiteshub/core/theming/app_colors.dart';
-import 'package:ecommercefruiteshub/core/utils/app_decorations.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/utils/app_decorations.dart';
 
 class CustomShippingOption extends StatelessWidget {
   final String title;
@@ -8,7 +8,8 @@ class CustomShippingOption extends StatelessWidget {
   final String price;
   final bool isSelected;
 
-  CustomShippingOption({
+  const CustomShippingOption({
+    super.key,
     required this.isSelected,
     required this.title,
     required this.subTitle,

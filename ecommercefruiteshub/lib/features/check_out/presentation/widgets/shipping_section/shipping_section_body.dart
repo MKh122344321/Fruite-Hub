@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/cubit/check_out_cubit/check_out_cubit.dart';
-import 'package:ecommercefruiteshub/features/check_out/presentation/widgets/shipping_section/custom_shipping_option.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../../core/entities/order_entity.dart';
+import 'custom_shipping_option.dart';
 
 class ShippingSectionBody extends StatefulWidget {
   const ShippingSectionBody({super.key});

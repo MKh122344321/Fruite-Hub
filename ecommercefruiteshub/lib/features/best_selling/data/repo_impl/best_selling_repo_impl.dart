@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommercefruiteshub/core/entities/product_entity.dart';
-import 'package:ecommercefruiteshub/core/errors/exceptions.dart';
-import 'package:ecommercefruiteshub/core/errors/failures.dart';
-import 'package:ecommercefruiteshub/features/best_selling/data/data_source/best_selling_remote_data_source.dart';
-import 'package:ecommercefruiteshub/features/best_selling/domain/repo_interface/best_selling_repo_interface.dart';
+import '../../../../core/entities/product_entity.dart';
+import '../../../../core/errors/exceptions.dart';
+import '../../../../core/errors/failures.dart';
+import '../data_source/best_selling_remote_data_source.dart';
+import '../../domain/repo_interface/best_selling_repo_interface.dart';
 
 class BestSellingRepoImpl implements BestSellingRepoInterface {
   final BestSellingRemoteDataSource bestSellingRemoteDataSource;

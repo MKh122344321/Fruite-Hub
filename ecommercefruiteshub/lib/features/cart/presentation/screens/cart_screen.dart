@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/widgets/build_app_bar.dart';
-import 'package:ecommercefruiteshub/features/cart/presentation/widgets/cart_screen_body.dart';
+import '../../../../core/widgets/build_app_bar.dart';
+import '../widgets/cart_screen_body.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {

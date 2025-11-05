@@ -1,7 +1,5 @@
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_text_form_filled.dart';
+import '../custom_widgets/custom_text_form_filled.dart';
 import 'package:flutter/material.dart';
-
-import 'custom_text_field.dart';
 
 class PasswordField extends StatefulWidget {
   const PasswordField({super.key, this.onSaved, this.hintText, this.readOnly});

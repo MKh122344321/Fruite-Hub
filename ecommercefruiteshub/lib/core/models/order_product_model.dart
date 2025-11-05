@@ -1,4 +1,4 @@
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
+import '../../features/cart/domain/entites/cart_item_entity.dart';
 
 class OrderProductModel {
   final String name;

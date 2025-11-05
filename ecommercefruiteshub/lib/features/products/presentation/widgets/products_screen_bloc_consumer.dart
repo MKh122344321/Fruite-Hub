@@ -1,17 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/cubits/products_cubit/products_cubit.dart';
-import 'package:ecommercefruiteshub/core/custom_widgets/custom_sliver_grid.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/build_error_bar.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/get_dummy_product.dart';
-import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
-import 'package:ecommercefruiteshub/core/utils/app_images.dart';
-import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
-import 'package:ecommercefruiteshub/core/widgets/custom_no_results__widget.dart';
-import 'package:ecommercefruiteshub/core/widgets/fruit_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:skeletonizer/skeletonizer.dart';
-import 'package:svg_flutter/svg_flutter.dart';
+
+import '../../../../core/cubits/products_cubit/products_cubit.dart';
+import '../../../../core/custom_widgets/custom_sliver_grid.dart';
+import '../../../../core/helper_functions/build_error_bar.dart';
+import '../../../../core/helper_functions/get_dummy_product.dart';
+import '../../../../core/widgets/custom_no_results__widget.dart';
+import '../../../../core/widgets/fruit_item.dart';
 
 class ProductsScreenBlocConsumer extends StatelessWidget {
   const ProductsScreenBlocConsumer({super.key});

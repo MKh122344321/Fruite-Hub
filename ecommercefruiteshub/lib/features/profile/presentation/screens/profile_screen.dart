@@ -1,7 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecommercefruiteshub/core/widgets/build_app_bar.dart';
-import 'package:ecommercefruiteshub/features/profile/presentation/widgets/profile_details_section/profile_screen_body.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/widgets/build_app_bar.dart';
+import '../widgets/profile_details_section/profile_screen_body.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

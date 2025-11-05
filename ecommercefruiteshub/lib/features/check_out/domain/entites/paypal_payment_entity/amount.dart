@@ -1,5 +1,5 @@
-import 'package:ecommercefruiteshub/core/helper_functions/get_currency.dart';
-import 'package:ecommercefruiteshub/core/entities/order_entity.dart';
+import '../../../../../core/helper_functions/get_currency.dart';
+import '../../../../../core/entities/order_entity.dart';
 
 import 'details.dart';
 

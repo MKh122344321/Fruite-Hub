@@ -1,10 +1,9 @@
-import 'package:ecommercefruiteshub/features/cart/data/repo_impl/cart_repo_impl.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/use_cases/add_item_to_cart_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/use_cases/remove_item_from_cart_entity.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
+
+import '../../../domain/entites/cart_entity.dart';
+import '../../../domain/entites/cart_item_entity.dart';
+import '../../../domain/use_cases/add_item_to_cart_entity.dart';
+import '../../../domain/use_cases/remove_item_from_cart_entity.dart';
 
 part 'cart_entity_state.dart';
 

@@ -1,6 +1,7 @@
-import 'package:ecommercefruiteshub/features/home/presentation/widgets/carousel_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
+
+import 'carousel_item.dart';
 
 class HomeScreenCarousel extends StatelessWidget {
   const HomeScreenCarousel({super.key});

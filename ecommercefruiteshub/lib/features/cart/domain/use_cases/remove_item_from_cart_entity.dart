@@ -1,6 +1,6 @@
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/entites/cart_item_entity.dart';
-import 'package:ecommercefruiteshub/features/cart/domain/repo_interface/cart_repo_interface.dart';
+import '../entites/cart_entity.dart';
+import '../entites/cart_item_entity.dart';
+import '../repo_interface/cart_repo_interface.dart';
 
 class RemoveItemFromCartEntity {
   final CartRepoInterface repo;
