@@ -1,3 +1,4 @@
+import 'package:ecommercefruiteshub/core/theming/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class BuildMenuItem extends StatelessWidget {
@@ -17,7 +18,10 @@ class BuildMenuItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: leadingWidget,
-      title: Text(title),
+      title: Text(
+        title,
+        style: TextStyles.semiBold13.copyWith(color: Color(0xff949D9E)),
+      ),
       trailing: traillingWidget,
       onTap: onTap,
     );

@@ -1,14 +1,14 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../features/cart/domain/entites/cart_item_entity.dart';
+import '../../features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
 import '../entities/product_entity.dart';
 import '../helper_functions/spacing.dart';
 import '../theming/app_colors.dart';
 import '../theming/app_text_styles.dart';
 import 'custom_network_image.dart';
-import '../../features/cart/domain/entites/cart_item_entity.dart';
-import '../../features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'package:svg_flutter/svg.dart';
 
 class FruitItem extends StatelessWidget {
   const FruitItem({super.key, required this.productEntity});
@@ -41,19 +41,12 @@ class FruitItem extends StatelessWidget {
                 child: Column(
                   children: [
                     highspace(height: 20),
-                    productEntity.imageUrl != null
-                        ? Expanded(
-                            flex: 1,
-                            child: CustomNetworkImage(
-                              imageUrl: productEntity.imageUrl!,
-                            ),
-                          )
-                        : Container(
-                            color: Colors.grey,
-                            height: 100,
-                            width: 100,
-                          ),
-                    const SizedBox(height: 24),
+                    Flexible(
+                      child: CustomNetworkImage(
+                        imageUrl: productEntity.imageUrl!,
+                      ),
+                    ),
+                    highspace(height: 10),
                     Expanded(
                       child: ListTile(
                         title: Text(
@@ -65,7 +58,8 @@ class FruitItem extends StatelessWidget {
                           TextSpan(
                             children: [
                               TextSpan(
-                                text: '${productEntity.price}جنية ',
+                                text:
+                                    '${productEntity.price}${"currency".tr()} ',
                                 style: TextStyles.bold13.copyWith(
                                   color: AppColors.secondaryColor,
                                 ),
@@ -83,7 +77,7 @@ class FruitItem extends StatelessWidget {
                                 ),
                               ),
                               TextSpan(
-                                text: 'كيلو',
+                                text: 'KG'.tr(),
                                 style: TextStyles.semiBold13.copyWith(
                                   color: AppColors.lightSecondaryColor,
                                 ),
@@ -108,6 +102,7 @@ class FruitItem extends StatelessWidget {
                         ),
                       ),
                     ),
+                    highspace(height: 20),
                   ],
                 ),
               ),

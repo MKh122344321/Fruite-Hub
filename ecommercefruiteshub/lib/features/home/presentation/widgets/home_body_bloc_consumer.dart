@@ -17,21 +17,23 @@ class HomeBodyBlocConsumer extends StatelessWidget {
     return BlocConsumer(
       bloc: cubit,
       buildWhen: (previous, current) =>
-          current is AllProductsLoading ||
-          current is AllProductsLoaded ||
-          current is AllProductsFailure,
+          current is BestSellingLoading ||
+          current is BestSellingLoaded ||
+          current is BestSellingFailure,
       builder: (context, state) {
-        if (state is AllProductsFailure) {
-          return SliverToBoxAdapter(child: Text(state.message));
-        } else if (state is AllProductsLoaded) {
+        if (state is BestSellingFailure) {
+          return SliverToBoxAdapter(child: Text(state.errMessage));
+        } else if (state is BestSellingLoaded) {
           return CustomSliverGrid(
-            childOfSliverGridBuilder: (context, index) =>
-                FruitItem(productEntity: state.products[index]),
-            itemCount: state.products.length,
+            childOfSliverGridBuilder: (context, index) => Skeletonizer(
+              enabled: state is BestSellingLoading,
+              child: FruitItem(productEntity: state.products[index]),
+            ),
+            itemCount: 4,
           );
         } else {
           return Skeletonizer.sliver(
-            enabled: state is AllProductsLoading,
+            enabled: state is BestSellingLoading,
             child: CustomSliverGrid(
               childOfSliverGridBuilder: (context, index) =>
                   FruitItem(productEntity: getDummyProduct()),

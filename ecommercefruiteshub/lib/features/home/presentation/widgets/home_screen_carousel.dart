@@ -13,7 +13,12 @@ class HomeScreenCarousel extends StatelessWidget {
         aspectRatio: 342 / 158,
 
         // height: 210,
-        showIndicator: true,
+        showIndicator: false,
+        autoPlay: true,
+        autoPlayCurve: Curves.fastOutSlowIn,
+        autoPlayInterval: Duration(seconds: 4),
+        autoPlayAnimationDuration: Duration(milliseconds: 800),
+
         slideIndicator: CircularSlideIndicator(),
       ),
       items: [1, 2, 3, 4, 5].map((i) {

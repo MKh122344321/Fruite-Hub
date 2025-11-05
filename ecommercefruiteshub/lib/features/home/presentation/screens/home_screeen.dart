@@ -12,7 +12,7 @@ class HomeScreeen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => getIt.get<ProductsCubit>()..getAllProducts(),
+      create: (context) => getIt.get<ProductsCubit>()..getBestSellingProducts(),
       child: SafeArea(child: HomeScreenBody(user: user)),
     );
   }

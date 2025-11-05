@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:ecommercefruiteshub/features/profile/presentation/screens/main_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
@@ -15,7 +16,6 @@ import 'features/home/domain/entity/pristant_bottom_nav_bar_entity.dart';
 import 'features/home/presentation/screens/home_screeen.dart';
 import 'features/products/presentation/screens/products_screen.dart';
 import 'features/profile/presentation/cubit/cubit/main_profile_cubit.dart';
-import 'features/profile/presentation/widgets/main_profile_screen_body.dart';
 
 class MainScreen extends StatelessWidget {
   MainScreen({super.key});
@@ -35,7 +35,7 @@ class MainScreen extends StatelessWidget {
 
       BlocProvider(
         create: (context) => getIt.get<MainProfileCubit>(),
-        child: MainProfileScreenBody(),
+        child: MainProfileScreen(),
       ),
     ];
   }

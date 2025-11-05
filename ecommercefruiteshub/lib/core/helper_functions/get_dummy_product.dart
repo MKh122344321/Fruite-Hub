@@ -12,7 +12,7 @@ ProductEntity getDummyProduct() {
     unitAmount: 1,
     isOrganic: true,
     isFeatured: true,
-    imageUrl: null,
+    imageUrl: '',
   );
 }
 

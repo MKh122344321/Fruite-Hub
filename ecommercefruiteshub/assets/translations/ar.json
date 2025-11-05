@@ -91,5 +91,8 @@
     "too_many_requests": "عدد كبير من الطلبات",
     "no_order": "لا يوجد طلبات",
     "update_orders": "تحديث الطلبات",
-    "search_result_not_found": "لم يتم العثور على نتايج البحث"
+    "search_result_not_found": "لم يتم العثور على نتايج البحث",
+    "KG": "كيلو",
+    "public": "عام",
+    "my_account": "حسابي"
 }
