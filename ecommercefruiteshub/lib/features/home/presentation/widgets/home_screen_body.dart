@@ -1,7 +1,7 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:ecommercefruiteshub/core/cubits/products_cubit/products_cubit.dart';
 import 'package:ecommercefruiteshub/core/helper_functions/spacing.dart';
 import 'package:ecommercefruiteshub/core/utils/k_padding.dart';
+import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
 import 'package:ecommercefruiteshub/features/best_selling/presentations/screens/best_selling_screen.dart';
 import 'package:ecommercefruiteshub/features/home/presentation/widgets/best_selling_headline.dart';
 import 'package:ecommercefruiteshub/features/home/presentation/widgets/home_body_bloc_consumer.dart';
@@ -11,8 +11,6 @@ import 'package:ecommercefruiteshub/features/home/presentation/widgets/home_scre
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
-
-import 'package:ecommercefruiteshub/features/auth/domain/entities/user_entity.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key, required this.user});

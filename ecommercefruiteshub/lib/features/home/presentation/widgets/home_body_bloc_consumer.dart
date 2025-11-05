@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:skeletonizer/skeletonizer.dart';
+
 import '../../../../core/cubits/products_cubit/products_cubit.dart';
 import '../../../../core/custom_widgets/custom_sliver_grid.dart';
 import '../../../../core/helper_functions/build_error_bar.dart';
 import '../../../../core/helper_functions/get_dummy_product.dart';
 import '../../../../core/widgets/fruit_item.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:skeletonizer/skeletonizer.dart';
 
 class HomeBodyBlocConsumer extends StatelessWidget {
   const HomeBodyBlocConsumer({super.key});
@@ -34,7 +35,7 @@ class HomeBodyBlocConsumer extends StatelessWidget {
             child: CustomSliverGrid(
               childOfSliverGridBuilder: (context, index) =>
                   FruitItem(productEntity: getDummyProduct()),
-              itemCount: 10,
+              itemCount: getDummyProducts().length,
             ),
           );
         }
