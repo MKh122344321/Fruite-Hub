@@ -5,37 +5,37 @@ import '../../../../core/custom_widgets/custom_text_form_filled.dart';
 import '../../../../core/helper_functions/spacing.dart';
 import '../../../../core/widgets/password_field.dart';
 
-class SignInWithEmailForm extends StatefulWidget {
+class SignInWithEmailForm extends StatelessWidget {
   const SignInWithEmailForm({
     super.key,
     required this.formKey,
     required this.email,
     required this.password,
+    required this.notifier,
   });
   final GlobalKey<FormState> formKey;
   final ValueChanged<String?> email;
   final ValueChanged<String?> password;
+  final ValueNotifier<AutovalidateMode> notifier;
 
-  @override
-  State<SignInWithEmailForm> createState() => _SignInWithEmailFormState();
-}
-
-class _SignInWithEmailFormState extends State<SignInWithEmailForm> {
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: widget.formKey,
-      autovalidateMode: AutovalidateMode.disabled,
-      child: Column(
-        children: [
-          CustomTextFormFilled(
-            onSaved: widget.email,
-            icon: SizedBox(),
-            hintText: 'email'.tr(),
-          ),
-          highspace(height: 20),
-          PasswordField(onSaved: widget.password),
-        ],
+    return ValueListenableBuilder(
+      valueListenable: notifier,
+      builder: (context, value, child) => Form(
+        key: formKey,
+        autovalidateMode: value,
+        child: Column(
+          children: [
+            CustomTextFormFilled(
+              onSaved: email,
+              icon: SizedBox(),
+              hintText: 'email'.tr(),
+            ),
+            highspace(height: 20),
+            PasswordField(onSaved: password, hintText: "password".tr()),
+          ],
+        ),
       ),
     );
   }

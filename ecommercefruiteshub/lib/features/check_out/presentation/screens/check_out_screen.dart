@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +19,11 @@ class CheckOutScreen extends StatelessWidget {
   /// *****  9f08c6a0-c879-4934-a4c1-8c34999b2a4f  ******
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, title: "checkout", showNotification: false),
+      appBar: buildAppBar(
+        context,
+        title: "Checkout".tr(),
+        showNotification: false,
+      ),
       body: BlocProvider(
         create: (context) => getIt.get<CheckOutCubit>(),
         child: Provider<OrderInputEntity>.value(

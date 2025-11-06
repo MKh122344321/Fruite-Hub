@@ -61,7 +61,10 @@ class CustomOnBoardingPage extends StatelessWidget {
                     ? const SizedBox()
                     : InkWell(
                         onTap: onClickSkip,
-                        child: Text('skip'.tr(), style: TextStyles.regular13),
+                        child: Padding(
+                          padding: KPadding.all8,
+                          child: Text('skip'.tr(), style: TextStyles.regular13),
+                        ),
                       ),
               ),
             ],

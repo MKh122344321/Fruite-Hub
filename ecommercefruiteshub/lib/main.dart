@@ -17,7 +17,6 @@ import 'core/utils/constants.dart';
 import 'features/cart/presentation/cubit/cubit/cart_entity_cubit.dart';
 import 'features/splash/presentation/screens/splash_screen.dart';
 import 'firebase_options.dart';
-import 'man_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -79,7 +78,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      home: !isLogIn ? SplashScreen() : MainScreen(),
+      home: !isLogIn ? SplashScreen() : SplashScreen(),
       onGenerateRoute: onGenerateRoute,
     );
   }

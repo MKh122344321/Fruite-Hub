@@ -34,7 +34,12 @@ class CartScreenBody extends StatelessWidget {
           ),
           Padding(
             padding: KPadding.bottom16,
-            child: getIt.get<CartEntity>().calculateTotalPrice() > 0
+            child:
+                context
+                        .watch<CartEntityCubit>()
+                        .cartEntity
+                        .calculateTotalPrice() >
+                    0
                 ? CustomElevatedButton(
                     buttonText:
                         '${'checkout'.tr()} ${context.watch<CartEntityCubit>().cartEntity.calculateTotalPrice()} \$',

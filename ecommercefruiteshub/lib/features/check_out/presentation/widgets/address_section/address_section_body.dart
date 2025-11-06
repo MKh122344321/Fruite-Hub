@@ -1,7 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+
 import 'address_form.dart';
 import 'save_address_bloc_consumer.dart';
-import 'package:flutter/material.dart';
 
 class AddressSectionBody extends StatelessWidget {
   const AddressSectionBody({
@@ -19,7 +20,7 @@ class AddressSectionBody extends StatelessWidget {
         Row(
           children: [
             CustomSwitchToSaveAddress(formKey: formKey, notifier: notifier),
-            TextButton(onPressed: () {}, child: Text("change_address".tr())),
+            TextButton(onPressed: () {}, child: Text("save_address".tr())),
           ],
         ),
       ],

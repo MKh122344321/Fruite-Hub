@@ -20,6 +20,9 @@ import 'social_midia_button.dart';
 class SignInScreenBody extends StatelessWidget {
   SignInScreenBody({super.key});
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  ValueNotifier<AutovalidateMode> notifier = ValueNotifier(
+    AutovalidateMode.disabled,
+  );
   late String email = "";
   late String password = '';
   @override
@@ -33,31 +36,12 @@ class SignInScreenBody extends StatelessWidget {
           Expanded(
             child: CustomScrollView(
               slivers: [
-                SliverAppBar(
-                  centerTitle: true,
-                  pinned: true,
-                  expandedHeight: size.height * .05,
-                  flexibleSpace: FlexibleSpaceBar(
-                    title: Text(
-                      'login'.tr(),
-                      style: TextStyles.bold19.copyWith(fontFamily: 'Cairo'),
-                    ),
-                  ),
-                  leading: InkWell(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: Icon(
-                      context.locale == Locale('en')
-                          ? Icons.chevron_right
-                          : Icons.chevron_left,
-                    ),
-                  ),
-                ),
                 SliverToBoxAdapter(
                   child: Column(
                     children: [
+                      highspace(height: 10),
                       SignInWithEmailForm(
+                        notifier: notifier,
                         formKey: formKey,
                         email: (value) {
                           email = value!;
@@ -90,6 +74,8 @@ class SignInScreenBody extends StatelessWidget {
                               email: email,
                               password: password,
                             );
+                          } else {
+                            notifier.value = AutovalidateMode.always;
                           }
                         },
                       ),
@@ -126,7 +112,7 @@ class SignInScreenBody extends StatelessWidget {
                       SocialMidiaButton(
                         imgUrl: Assets.imagesFacebookIcon,
                         onTap: () {},
-                        textButton: 'continue_with_facebook',
+                        textButton: 'continue_with_facebook'.tr(),
                       ),
                     ],
                   ),

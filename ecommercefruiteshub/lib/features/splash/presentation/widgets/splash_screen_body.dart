@@ -49,7 +49,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody> {
     bool isOnBoardingSeen = Prefs.getBool(kIsOnBoardingSeen);
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacementNamed(
-        isOnBoardingSeen ? RoutesNames.signIn : RoutesNames.onboarding,
+        isOnBoardingSeen ? RoutesNames.onboarding : RoutesNames.onboarding,
       );
     });
   }

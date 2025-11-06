@@ -94,5 +94,7 @@
     "search_result_not_found": "لم يتم العثور على نتايج البحث",
     "KG": "كيلو",
     "public": "عام",
-    "my_account": "حسابي"
+    "my_account": "حسابي",
+    "order_track": "تتبع الطلب",
+    "Checkout": "الدفع"
 }

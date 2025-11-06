@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:ecommercefruiteshub/core/utils/routes_names.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -16,27 +17,28 @@ class OnBoardingScreenBody extends StatefulWidget {
 }
 
 final PageController _controller = PageController();
-List<Widget> pages = [
-  CustomOnBoardingPage(
-    onClickSkip: () {
-      Prefs.setBool(kIsOnBoardingSeen, true);
-    },
-    currentPage: 0,
-    backgroundImage: Assets.imagesPageViewItem1BackgroundImage,
-    imgUrl: Assets.imagesPageViewItem1Image,
-    title: "welcome".tr(),
-    discription: "decriptionInSplash1".tr(),
-  ),
-  CustomOnBoardingPage(
-    currentPage: 1,
-    backgroundImage: Assets.imagesPageViewItem2BackgroundImage,
-    imgUrl: Assets.imagesPageViewItem2Image,
-    title: "enter_and_shop".tr(),
-    discription: "decriptionInSplash1".tr(),
-  ),
-];
 
 class _OnBoardingScreenBodyState extends State<OnBoardingScreenBody> {
+  List<Widget> pages(BuildContext context) => [
+    CustomOnBoardingPage(
+      onClickSkip: () {
+        Prefs.setBool(kIsOnBoardingSeen, true);
+        Navigator.of(context).pushReplacementNamed(RoutesNames.signIn);
+      },
+      currentPage: 0,
+      backgroundImage: Assets.imagesPageViewItem1BackgroundImage,
+      imgUrl: Assets.imagesPageViewItem1Image,
+      title: "welcome".tr(),
+      discription: "decriptionInSplash1".tr(),
+    ),
+    CustomOnBoardingPage(
+      currentPage: 1,
+      backgroundImage: Assets.imagesPageViewItem2BackgroundImage,
+      imgUrl: Assets.imagesPageViewItem2Image,
+      title: "enter_and_shop".tr(),
+      discription: "decriptionInSplash1".tr(),
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -46,7 +48,7 @@ class _OnBoardingScreenBodyState extends State<OnBoardingScreenBody> {
       itemBuilder: (context, index) {
         return Stack(
           children: [
-            pages[index],
+            pages(context)[index],
             Positioned(
               bottom: size.height * 0.14,
               left: 0,
@@ -54,7 +56,7 @@ class _OnBoardingScreenBodyState extends State<OnBoardingScreenBody> {
               child: Center(
                 child: SmoothPageIndicator(
                   controller: _controller, // Page controller
-                  count: pages.length, // Total pages
+                  count: pages(context).length, // Total pages
                   effect: ExpandingDotsEffect(
                     // Dots effect
                     dotHeight: 10,
@@ -71,7 +73,7 @@ class _OnBoardingScreenBodyState extends State<OnBoardingScreenBody> {
           ],
         );
       },
-      itemCount: pages.length,
+      itemCount: pages(context).length,
     );
   }
 }
