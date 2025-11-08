@@ -45,31 +45,38 @@
 
 ## Screenshots :
  - **home** :
- - <img width="540" height="960" alt="Screenshot_20251107-001919" src="https://github.com/user-attachments/assets/1830dcaf-eb74-4cba-8b96-46031118ee90" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235123" src="https://github.com/user-attachments/assets/a02fe5bd-a1a7-43ab-b943-346fd49af396" />
+
  - **products** :
- - <img width="540" height="960" alt="Screenshot_20251107-002004" src="https://github.com/user-attachments/assets/4b3f2a8c-2596-4e63-a976-6a632bfdce5b" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235136" src="https://github.com/user-attachments/assets/9f804ab6-f570-4e95-a8f4-eaf00c703e5a" />
 
- -  <img width="540" height="960" alt="Screenshot_20251107-001928" src="https://github.com/user-attachments/assets/5bc3f282-47e3-49dd-a108-40141c24d827" />
- 
+ - <img width="540" height="960" alt="Screenshot_20251107-235240" src="https://github.com/user-attachments/assets/b150ffa8-b9fc-4790-96f3-66281ab8c805" />
+
  - **cart** :
- - <img width="540" height="960" alt="Screenshot_20251107-001940" src="https://github.com/user-attachments/assets/328a7e20-c359-4266-9eb6-8544975ad297" />
- - **profile** :
- - <img width="540" height="960" alt="Screenshot_20251107-002216" src="https://github.com/user-attachments/assets/fff52226-3e62-4332-a669-d708a04d869e" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235222" src="https://github.com/user-attachments/assets/c7132d0b-a524-4362-a518-5fc95577ef82" />
 
- - <img width="540" height="960" alt="Screenshot_20251107-001945" src="https://github.com/user-attachments/assets/0c954b36-584a-430d-99e4-392963263ebd" />
- - **best selling** :
- - <img width="540" height="960" alt="Screenshot_20251107-001954" src="https://github.com/user-attachments/assets/e3de8921-9661-479b-9b9c-18a84f215892" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235207" src="https://github.com/user-attachments/assets/a0000e67-566c-4608-999f-5da8aa441f30" />
+ 
+ - **profile** :
+ - <img width="540" height="960" alt="Screenshot_20251108-000106" src="https://github.com/user-attachments/assets/bf3fbbe1-b499-4146-9268-85b13d442e2f" />
+
+ - <img width="540" height="960" alt="Screenshot_20251108-000118" src="https://github.com/user-attachments/assets/5ce40fe4-b917-405d-9fd2-baf1c941fcb5" />
 
  - **payment** :
- - <img width="540" height="960" alt="Screenshot_20251107-002037" src="https://github.com/user-attachments/assets/d26431aa-9c0e-44db-ba6d-91a344a3401e" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235255" src="https://github.com/user-attachments/assets/7f0bc4e4-7251-4502-b446-2ce4a6104bc6" />
 
- - <img width="540" height="960" alt="Screenshot_20251107-002045" src="https://github.com/user-attachments/assets/18df6975-53ec-4e54-b6eb-542587a39ca0" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235319" src="https://github.com/user-attachments/assets/5b6c93e9-da2c-4163-9bc9-93f00c060927" />
 
- - <img width="540" height="960" alt="Screenshot_20251107-002150" src="https://github.com/user-attachments/assets/4eb5fe63-0556-47b6-8c16-fa91b8a8df72" />
+ - <img width="540" height="960" alt="Screenshot_20251107-235410" src="https://github.com/user-attachments/assets/5803ae9a-5ac4-42a9-994e-3e0de29cf739" />
+
  - **orders** :
- - <img width="540" height="960" alt="Screenshot_20251107-002225" src="https://github.com/user-attachments/assets/3265f3a6-e4d4-4e5a-813f-60bcfabdc8a5" />
- - **change language** :
- - <img width="540" height="960" alt="Screenshot_20251107-003526" src="https://github.com/user-attachments/assets/f351c2b9-2266-40d4-8435-831c9738fdb7" />
+ - <img width="540" height="960" alt="Screenshot_20251108-005539" src="https://github.com/user-attachments/assets/70a41cf7-0318-4870-9c21-962374cc281a" />
+
+ - **localization** :
+ - <img width="540" height="960" alt="Screenshot_20251108-010655" src="https://github.com/user-attachments/assets/38fdef4a-52a5-4441-8588-f2cba315ebff" />
+
+
+ 
 
 
 ## Getting Started
