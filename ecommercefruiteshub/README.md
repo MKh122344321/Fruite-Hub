@@ -1,3 +1,6 @@
+
+# Fruite Hub
+
 ## Features
 
 - **Authentication** :
@@ -75,6 +78,10 @@
  - **localization** :
  - <img width="540" height="960" alt="Screenshot_20251108-010655" src="https://github.com/user-attachments/assets/38fdef4a-52a5-4441-8588-f2cba315ebff" />
 
+### Dashboard Overview
+
+The **Dashboard** is a dedicated simple flutter application designed for administrators to manage the products details in the **Fruite Hub** system. Admin users can use the dashboard to easily add, update, or remove fruit products, ensuring that the product catalog is always up-to-date.
+**Note**: The dashboard is currently in its early stages, and new features will be added progressively to improve its functionality and performance.
 
 ## To Do
 - **Add notifications**: Implement push notifications for user updates and new products.
@@ -82,6 +89,9 @@
 - **Add dark and light themes**: Provide a theme toggle to switch between light and dark modes.
 - **Add review section**: Enable users to leave reviews and ratings for products.
 - **Add "Forgot Password" feature**: Implement a flow for users to reset their password via email or SMS if they forget it.
+
+
+
 
 
 
