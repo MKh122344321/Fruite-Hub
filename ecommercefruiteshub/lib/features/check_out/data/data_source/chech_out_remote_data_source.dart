@@ -19,9 +19,15 @@ class CheckOutRemoteDataSource {
   Future<void> addOrder({required OrderInputEntity order}) async {
     if (await networkInfo.isConnected == true) {
       try {
+        final currentDocumentOrderId = Uuid().v1();
         await dataBaseService.setData(
-          path: ApiPath.addOrders(orderId: Uuid().v4(), userId: getUser().uid),
-          data: OrderModel.fromEntity(order).toJson(),
+          path: ApiPath.addOrders(
+            userId: getUser().uid,
+            orderId: currentDocumentOrderId,
+          ),
+          data: (OrderModel.fromEntity(
+            order,
+          )).toJson(currentDocumentOrderId: currentDocumentOrderId),
         );
       } catch (e) {
         throw CustomException(message: e.toString());

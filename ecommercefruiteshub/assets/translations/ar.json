@@ -96,5 +96,6 @@
     "public": "عام",
     "my_account": "حسابي",
     "order_track": "تتبع الطلب",
-    "Checkout": "الدفع"
+    "Checkout": "الدفع",
+    "cart_is_empty": "سلة التسوق فارغة"
 }

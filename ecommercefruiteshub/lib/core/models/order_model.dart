@@ -1,9 +1,7 @@
+import '../../features/profile/domain/entities/order_track_entity.dart';
+import '../entities/order_entity.dart';
 import 'order_product_model.dart';
 import 'shipping_address_model.dart';
-import '../../features/profile/domain/entities/order_track_entity.dart';
-import 'package:uuid/uuid.dart';
-
-import '../entities/order_entity.dart';
 
 class OrderModel {
   final double totalPrice;
@@ -58,7 +56,7 @@ class OrderModel {
   );
   OrderTrack toTrack() {
     return OrderTrack(
-      uid: uId,
+      uid: orderId,
       date: date!,
       currentStep: currentTrackStep,
       orderCounts: orderProducts.length,
@@ -66,9 +64,9 @@ class OrderModel {
     );
   }
 
-  toJson() => {
+  toJson({required String currentDocumentOrderId}) => {
     'currentStep': currentTrackStep,
-    'orderId': orderId,
+    'orderId': currentDocumentOrderId,
     'totalPrice': totalPrice,
     'uId': uId,
     'status': 'pending',

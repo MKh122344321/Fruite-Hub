@@ -8,7 +8,7 @@ import '../../../../../core/utils/k_padding.dart';
 import '../../../../../core/widgets/custom_no_results__widget.dart';
 import '../../../domain/entities/order_track_entity.dart';
 import '../../cubit/cubit/main_profile_cubit.dart';
-import 'track_way.dart';
+import 'orders_list.dart';
 
 class OrderTrackScreenBody extends StatelessWidget {
   const OrderTrackScreenBody({super.key});
@@ -35,11 +35,11 @@ class OrderTrackScreenBody extends StatelessWidget {
                     }
                     if (state is OrderTrackLoading) {
                       return Skeletonizer.sliver(
-                        child: TrackWay(track: getDummyTrackList()),
+                        child: OrdersList(track: getDummyTrackList()),
                       );
                     }
                     if (state is OrderTrackLoaded) {
-                      return TrackWay(track: state.ordersTrackEntity);
+                      return OrdersList(track: state.ordersTrackEntity);
                     }
                     if (state is OrderTrackEmpty) {
                       return SliverToBoxAdapter(

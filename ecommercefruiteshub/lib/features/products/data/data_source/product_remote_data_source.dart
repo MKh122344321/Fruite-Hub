@@ -41,7 +41,28 @@ class ProductRemoteDataSource {
       try {
         await for (final allProductsList in dataBaseService.collectionStream(
           queryBuilder: (query) {
-            return query.where('name', isGreaterThanOrEqualTo: searchLetters);
+            print(
+              query
+                  .orderBy("name")
+                  .where("name", isEqualTo: searchLetters)
+                  .startAt([searchLetters]),
+            );
+
+            return searchLetters == ""
+                ? query
+                : query
+                      .orderBy("name")
+                      .where("name")
+                      .startAt([
+                        searchLetters!.replaceRange(
+                          0,
+                          1,
+                          searchLetters[0].toUpperCase(),
+                        ),
+                      ])
+                      .endAt([
+                        '${searchLetters.replaceRange(0, 1, searchLetters[0].toUpperCase())}\uf8ff',
+                      ]);
           },
           builder: (query, documentId) =>
               ProductModel.fromJson(query).toEntity(),
@@ -51,10 +72,7 @@ class ProductRemoteDataSource {
           yield allProductsList;
         }
       } catch (e) {
-        throw CustomException(
-          message:
-              'Exeption in getAllProducts : Failed to get products from fierbase',
-        );
+        throw CustomException(message: e.toString());
       }
     } else {
       throw CustomException(message: 'No internet connection');

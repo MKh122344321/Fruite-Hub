@@ -1,16 +1,11 @@
-import 'dart:developer';
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_paypal_payment/flutter_paypal_payment.dart';
 
 import '../../../../core/custom_widgets/custom_elevated_button.dart';
 import '../../../../core/entities/order_entity.dart';
 import '../../../../core/helper_functions/build_error_bar.dart';
-import '../../../../core/secure/constants/constants.dart';
 import '../../../../core/utils/k_padding.dart';
-import '../../../../core/utils/routes_names.dart';
 import '../../domain/entites/paypal_payment_entity/paypal_payment_entity.dart';
 import '../cubit/check_out_cubit/check_out_cubit.dart';
 import 'address_section/address_section_body.dart';
@@ -170,36 +165,36 @@ class _CheckOutScreenBodyState extends State<CheckOutScreenBody> {
       orderEntity,
     );
     var cubit = context.read<CheckOutCubit>();
-    // cubit.addOrder(order: orderEntity);
+    cubit.addOrder(order: orderEntity);
 
-    Navigator.of(context, rootNavigator: true).push(
-      MaterialPageRoute(
-        builder: (BuildContext context) {
-          return PaypalCheckoutView(
-            sandboxMode: true,
-            clientId: kPaypalClientId,
-            secretKey: kPaypalSecretKey,
-            transactions: [paypalPaymentEntity],
-            note: "Contact us for any questions on your order.",
-            onSuccess: (Map params) async {
-              log("onSuccess: $params");
-              Navigator.pop(context);
-              cubit.addOrder(order: orderEntity);
-              Navigator.of(
-                context,
-              ).pushNamed(RoutesNames.paymentSuccess, arguments: orderEntity);
-              // print("onSuccess: $params");
-            },
-            onError: (error) {
-              print("onError: $error");
-              Navigator.pop(context);
-            },
-            onCancel: () {
-              print('cancelled:');
-            },
-          );
-        },
-      ),
-    );
+    // Navigator.of(context, rootNavigator: true).push(
+    //   MaterialPageRoute(
+    //     builder: (BuildContext context) {
+    //       return PaypalCheckoutView(
+    //         sandboxMode: true,
+    //         clientId: kPaypalClientId,
+    //         secretKey: kPaypalSecretKey,
+    //         transactions: [paypalPaymentEntity],
+    //         note: "Contact us for any questions on your order.",
+    //         onSuccess: (Map params) async {
+    //           log("onSuccess: $params");
+    //           Navigator.pop(context);
+    //           cubit.addOrder(order: orderEntity);
+    //           Navigator.of(
+    //             context,
+    //           ).pushNamed(RoutesNames.paymentSuccess, arguments: orderEntity);
+    //           // print("onSuccess: $params");
+    //         },
+    //         onError: (error) {
+    //           print("onError: $error");
+    //           Navigator.pop(context);
+    //         },
+    //         onCancel: () {
+    //           print('cancelled:');
+    //         },
+    //       );
+    //     },
+    //   ),
+    // );
   }
 }
