@@ -76,7 +76,13 @@
  - <img width="540" height="960" alt="Screenshot_20251108-010655" src="https://github.com/user-attachments/assets/38fdef4a-52a5-4441-8588-f2cba315ebff" />
 
 
- 
+## To Do
+- **Add notifications**: Implement push notifications for user updates and new products.
+- **Add favorite section**: Allow users to mark items as favorites and view them in a separate section.
+- **Add dark and light themes**: Provide a theme toggle to switch between light and dark modes.
+- **Add review section**: Enable users to leave reviews and ratings for products.
+- **Add "Forgot Password" feature**: Implement a flow for users to reset their password via email or SMS if they forget it.
+
 
 
 ## Getting Started
@@ -91,3 +97,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
