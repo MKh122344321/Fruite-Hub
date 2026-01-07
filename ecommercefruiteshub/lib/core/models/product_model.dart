@@ -1,7 +1,4 @@
-import 'dart:io';
-
 import '../entities/product_entity.dart';
-
 import '../helper_functions/get_avg_rating.dart';
 import 'review_model.dart';
 

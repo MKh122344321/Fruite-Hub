@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/helper_functions/build_error_bar.dart';
 import '../../../../core/widgets/custom_progress_hud.dart';
 import '../cubit/check_out_cubit/check_out_cubit.dart';
 import 'check_out_screen_body.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
 class CheckOutBlocConsumer extends StatelessWidget {
   const CheckOutBlocConsumer({super.key});

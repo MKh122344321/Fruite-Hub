@@ -7,12 +7,12 @@ class OrderDetailsWidget extends StatelessWidget {
   final int itemCount;
 
   const OrderDetailsWidget({
-    Key? key,
+    super.key,
     required this.orderNumber,
     required this.orderDate,
     required this.price,
     required this.itemCount,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

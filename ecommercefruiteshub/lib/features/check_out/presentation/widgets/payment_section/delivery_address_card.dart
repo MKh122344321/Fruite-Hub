@@ -7,12 +7,12 @@ class DeliveryAddressCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const DeliveryAddressCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.address,
     required this.onEdit,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
